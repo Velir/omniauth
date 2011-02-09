@@ -18,7 +18,7 @@ module OmniAuth
       end
       
       def user_data
-        @data ||= MultiJson.decode(@access_token.get('/oauth/user'))['user']
+        @data ||= MultiJson.decode(@access_token.get('/oauth/user'))
       end
             
       def user_info
