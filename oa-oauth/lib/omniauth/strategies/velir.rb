@@ -18,7 +18,7 @@ module OmniAuth
       end
       
       def user_data
-        @data ||= MultiJson.decode(@access_token.get('/oauth/user', {}, { "Accept-Language" => "en-us,en;"}))
+        @data ||= MultiJson.decode(@access_token.get('/oauth/user'))['user']
       end
             
       def user_info
