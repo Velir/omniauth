@@ -23,7 +23,10 @@ module OmniAuth
             
       def user_info
         {
-          'email' => (user_data["email"] if user_data["email"])
+          'email' => (user_data["email"] if user_data["email"]),
+          'name' => (user_data["name"] if user_data["name"]),
+          'screen_name' => (user_data["nickname"] if user_data["nickname"]),
+          'image' => (user_data["image"] if user_data["nickname"])
         }
       end
       
