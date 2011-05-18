@@ -14,7 +14,7 @@ module OmniAuth
       # @param [String] client_secret the application secret as registered on Facebook
       # @option options [String] :scope ('email,offline_access') comma-separated extended permissions such as `email` and `manage_pages`
       def initialize(app, client_id = nil, client_secret = nil, options = {}, &block)
-        super(app, :velir, client_id, client_secret, {:site => 'http://velir-identity.heroku.com/'}, options, &block)
+        super(app, :velir, client_id, client_secret, {:site => 'http://velir.authorizely.com/'}, options, &block)
       end
       
       def user_data
